@@ -1,4 +1,4 @@
-# Copyright (C) 2021 Veez Music-Project
+# Copyright (C) 2021 Alisha Music-Project
 
 from asyncio.queues import QueueEmpty
 
