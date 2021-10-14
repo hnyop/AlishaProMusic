@@ -69,19 +69,19 @@ async def start_(client: Client, message: Message):
                 [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
                 [
                     InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton("💝 Donate", url=f"https://t.me/{OWNER_NAME}"),
+                    
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "👥 Official Group", url=f"https://t.me/AlishaSupport {GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 Official Channel", url=f"https://t.me/ABOUTABHI {UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/levina-lab/VeezMusic"
+                        "🌐 Source Code", url="https://t.me/Venom_Hai_Hum"
                     )
                 ],
             ]
@@ -101,15 +101,15 @@ async def start(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("✨ Group", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("✨ Group", url=f"https://t.me/AlishaSupport{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "📣 Channel", url=f"https://t.me/ABOUTABHI {UPDATES_CHANNEL}"
                 ),
             ]
         ]
     )
 
-    alive = f"**Hello {message.from_user.mention}, i'm {BOT_NAME}**\n\n✨ Bot is working normally\n🍀 My Master: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n✨ Bot Version: `v{__version__}`\n🍀 Pyrogram Version: `{pyrover}`\n✨ Python Version: `{__python_version__}`\n🍀 Uptime Status: `{uptime}`\n\n**Thanks for Adding me here, for playing music on your Group voice chat** ❤"
+    alive = f"**Hello {message.from_user.mention}, i'm 乛𝙌𝙐𝙀𝙀𝙉🕊️⃝🦋⁪⁬𝘼𝙇𝙄𝙎𝙃𝘼{BOT_NAME}**\n\n✨ Bot is working normally\n🍀 My Master: Aʙʜɪᴍᴀɴʏᴜ SɪɴɢH RᴀɴᴀᴡᴀT(https://t.me/Venom_Hai_Hum)\n✨ Bot Version: `v2.0{__version__}`\n🍀 Pyrogram Version: `2.3.1{pyrover}`\n✨ Python Version: `2.3.5{__python_version__}`\n🍀 Uptime Status: `5{uptime}`\n\n**Thanks for Adding me here, for playing music on your Group voice chat** ❤"
 
     await message.reply_photo(
         photo=f"{ALIVE_IMG}",
@@ -127,14 +127,14 @@ async def help(client: Client, message: Message):
 
 » **press the button below to read the explanation and see the list of available commands !**
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by 乛𝙌𝙐𝙀𝙀𝙉🕊️⃝🦋⁪⁬𝘼𝙇𝙄𝙎𝙃𝘼 A.I__""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton(text="❓ Basic Guide", callback_data="cbguide")]]
         ),
     )
 
 
-@Client.on_message(command(["ping", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["ping", f"ping@QueenAlishaRobot{BOT_USERNAME}"]) & ~filters.edited)
 async def ping_pong(client: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("pinging...")
@@ -142,7 +142,7 @@ async def ping_pong(client: Client, message: Message):
     await m_reply.edit_text("🏓 `PONG!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`")
 
 
-@Client.on_message(command(["uptime", f"uptime@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["uptime", f"uptime@QueenAlishaRobot{BOT_USERNAME}"]) & ~filters.edited)
 @sudo_users_only
 async def get_uptime(client: Client, message: Message):
     current_time = datetime.utcnow()
