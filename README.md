@@ -1,6 +1,7 @@
 <p align="center"><a href="https://t.me/Venom_Hai_Hum"><img src="https://telegra.ph/file/49903f106f084a2e1e1c6.jpg"></a></p>
 <p align="center">
-    <br><b>Veez Music is a telegram bot project that's allow you to play music on telegram voice chat group</b><br>
+<p align="center"><a href=""> <img src="https://img.shields.io/badge/Copy%20Paster%20Ki%20Gand%20Main%20Land-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+    <br><b>Alisha Music is a telegram bot project that's allow you to play music on telegram voice chat group</b><br>
 </p>
 <p align="center">
     <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-black.svg?style=flat-square&logo=python&logoColor=blue&color=red" /></a>
