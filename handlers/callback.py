@@ -1,4 +1,4 @@
-# (C) 2021 VeezMusic-Project
+# (C) 2021 AlishaMusic-Project
 
 from handlers.play import cb_admin_check
 from helpers.decorators import authorized_users_only
@@ -46,7 +46,7 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/levina-lab/VeezMusic"
+                        "🌐 Source Code", url="https://github.com/t.me/Venom_Hai_Hum"
                     )
                 ],
             ]
