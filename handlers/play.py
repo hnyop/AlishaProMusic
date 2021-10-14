@@ -202,11 +202,11 @@ async def playlist(client, message):
 
             [
 
-                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/AlishaSupport {GROUP_SUPPORT}"),
 
                 InlineKeyboardButton(
 
-                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/ABOUTABHI {UPDATES_CHANNEL}"
 
                 ),
 
@@ -332,7 +332,7 @@ def r_ply(type_):
 
 @Client.on_message(
 
-    command(["player", f"player@{BOT_USERNAME}"]) & filters.group & ~filters.edited
+    command(["player", f"player@QueenAlishaRobot{BOT_USERNAME}"]) & filters.group & ~filters.edited
 
 )
 
@@ -372,7 +372,7 @@ async def settings(client, message):
 
 @Client.on_message(
 
-    command(["music", f"music@{BOT_USERNAME}"])
+    command(["music", f"music@QueenAlishaRobot{BOT_USERNAME}"])
 
     & ~filters.edited
 
@@ -456,11 +456,11 @@ async def p_cb(b, cb):
 
             [
 
-                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/AlishaSupport {GROUP_SUPPORT}"),
 
                 InlineKeyboardButton(
 
-                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/ABOUTABHI {UPDATES_CHANNEL}"
 
                 ),
 
@@ -544,11 +544,11 @@ async def m_cb(b, cb):
 
             [
 
-                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/AlishaSupport {GROUP_SUPPORT}"),
 
                 InlineKeyboardButton(
 
-                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/ABOUTABHI {UPDATES_CHANNEL}"
 
                 ),
 
@@ -934,7 +934,7 @@ async def play(_, message: Message):
 
                         f"🔴 **Flood Wait Error** 🔴 \n\n**userbot can't join this group due to many join requests for userbot.**"
 
-                        f"\n\n**or add @{ASSISTANT_NAME} to this group manually then try again.**",
+                        f"\n\n**or add @Queen_Alisha {ASSISTANT_NAME} to this group manually then try again.**",
 
                     )
 
@@ -946,7 +946,7 @@ async def play(_, message: Message):
 
         await lel.edit(
 
-            f"» **userbot was banned in this group !**\n\n**unban @{ASSISTANT_NAME} and added again to this group manually."
+            f"» **userbot was banned in this group !**\n\n**unban @Queen_Alisha{ASSISTANT_NAME} and added again to this group manually."
 
         )
 
@@ -1026,7 +1026,7 @@ async def play(_, message: Message):
 
                     InlineKeyboardButton(
 
-                        "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/ABOUTABHI {UPDATES_CHANNEL}"
 
                     )
 
@@ -1040,7 +1040,7 @@ async def play(_, message: Message):
 
         title = file_name
 
-        thumb_name = "https://telegra.ph/file/fa2cdb8a14a26950da711.png"
+        thumb_name = "https://telegra.ph/file/e664bc5b8e1ad68c0f0a5.png"
 
         thumbnail = thumb_name
 
@@ -1176,7 +1176,7 @@ async def play(_, message: Message):
 
             emojilist = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣"]
 
-            while j < 5:
+            while j < 1:
 
                 toxxt += f"{emojilist[j]} [{results[j]['title'][:25]}...](https://youtube.com{results[j]['url_suffix']})\n"
 
@@ -1306,7 +1306,7 @@ async def play(_, message: Message):
 
                         InlineKeyboardButton(
 
-                            "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                            "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/ABOUTABHI {UPDATES_CHANNEL}"
 
                         )
 
@@ -1512,7 +1512,7 @@ async def lol_cb(b, cb):
 
             ],
 
-            [InlineKeyboardButton("• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}")],
+            [InlineKeyboardButton("• Cʜᴀɴɴᴇʟ", url=f"https://t.me/ABOUTABHI {UPDATES_CHANNEL}")],
 
         ]
 
@@ -1686,7 +1686,7 @@ async def ytplay(_, message: Message):
 
                         f"🔴 **Flood Wait Error** 🔴 \n\n**userbot can't join this group due to many join requests for userbot.**"
 
-                        f"\n\n**or add @{ASSISTANT_NAME} to this group manually then try again.**",
+                        f"\n\n**or add @Queen_Alisha {ASSISTANT_NAME} to this group manually then try again.**",
 
                     )
 
@@ -1698,7 +1698,7 @@ async def ytplay(_, message: Message):
 
         await lel.edit(
 
-            f"💡 **userbot was banned in this group !** \n\n**unban @{ASSISTANT_NAME} and add to this group again manually.**"
+            f"💡 **userbot was banned in this group !** \n\n**unban @Queen_Alisha {ASSISTANT_NAME} and add to this group again manually.**"
 
         )
 
@@ -1796,7 +1796,7 @@ async def ytplay(_, message: Message):
 
             ],
 
-            [InlineKeyboardButton("• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}")],
+            [InlineKeyboardButton("• Cʜᴀɴɴᴇʟ", url=f"https://t.me/ABOUTABHI {UPDATES_CHANNEL}")],
 
         ]
 
