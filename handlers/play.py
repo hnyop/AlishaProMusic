@@ -118,9 +118,9 @@ async def playlist(client, message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/AlishaSupport{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/ABOUTABHI{UPDATES_CHANNEL}"
                 ),
             ]
         ]
@@ -260,9 +260,9 @@ async def p_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/AlishaSupport{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/ABOUTABHI{UPDATES_CHANNEL}"
                 ),
             ],
             [InlineKeyboardButton("🔙 Go Back", callback_data="menu")],
@@ -308,9 +308,9 @@ async def m_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/AlishaSupport{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/ABOUTABHI{UPDATES_CHANNEL}"
                 ),
             ],
             [InlineKeyboardButton("🔙 Go Back", callback_data="menu")],
@@ -524,13 +524,13 @@ async def play(_, message: Message):
                     # print(e)
                     await lel.edit(
                         f"🔴 **Flood Wait Error** 🔴 \n\n**userbot can't join this group due to many join requests for userbot.**"
-                        f"\n\n**or add @{ASSISTANT_NAME} to this group manually then try again.**",
+                        f"\n\n**or add @Queen_Alisha to this group manually then try again.**",
                     )
     try:
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"» **userbot was banned in this group !**\n\n**unban @{ASSISTANT_NAME} and added again to this group manually."
+            f"» **userbot was banned in this group !**\n\n**unban @Queen_Alisha and added again to this group manually."
         )
         return
     text_links = None
@@ -570,14 +570,14 @@ async def play(_, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/ABOUTABHI{UPDATES_CHANNEL}"
                     )
                 ],
             ]
         )
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/fa2cdb8a14a26950da711.png"
+        thumb_name = "https://telegra.ph/file/e664bc5b8e1ad68c0f0a5.png"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         message.from_user.first_name
@@ -619,7 +619,7 @@ async def play(_, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/ABOUTABHI{UPDATES_CHANNEL}"
                     )
                 ],
             ]
@@ -635,7 +635,7 @@ async def play(_, message: Message):
         ydl_opts = {"format": "bestaudio[ext=m4a]"}
 
         try:
-            results = YoutubeSearch(query, max_results=5).to_dict()
+            results = YoutubeSearch(query, max_results=1).to_dict()
         except:
             await lel.edit(
                 "😕 **song name not detected**\n\n» **please provide the name of the song you want to play**"
@@ -645,36 +645,7 @@ async def play(_, message: Message):
             toxxt = "\n"
             j = 0
             user = user_name
-            emojilist = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣"]
-            while j < 5:
-                toxxt += f"{emojilist[j]} [{results[j]['title'][:25]}...](https://youtube.com{results[j]['url_suffix']})\n"
-                toxxt += f" ├ 💡 **Duration** - `{results[j]['duration']}`\n"
-                toxxt += f" └ ⚡ __Powered by {BOT_NAME}__\n\n"
-                j += 1
-            keyboard = InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            "1️⃣", callback_data=f"plll 0|{query}|{user_id}"
-                        ),
-                        InlineKeyboardButton(
-                            "2️⃣", callback_data=f"plll 1|{query}|{user_id}"
-                        ),
-                        InlineKeyboardButton(
-                            "3️⃣", callback_data=f"plll 2|{query}|{user_id}"
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            "4️⃣", callback_data=f"plll 3|{query}|{user_id}"
-                        ),
-                        InlineKeyboardButton(
-                            "5️⃣", callback_data=f"plll 4|{query}|{user_id}"
-                        ),
-                    ],
-                    [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
-                ]
-            )
+            
             await message.reply_photo(
                 photo=f"{THUMB_IMG}", caption=toxxt, reply_markup=keyboard
             )
@@ -713,7 +684,7 @@ async def play(_, message: Message):
                     ],
                     [
                         InlineKeyboardButton(
-                            "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                            "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/ABOUTABHI{UPDATES_CHANNEL}"
                         )
                     ],
                 ]
@@ -865,7 +836,7 @@ async def lol_cb(b, cb):
         os.remove("final.png")
 
 
-@Client.on_message(command(["ytp", f"ytp@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["ytp", f"ytp@QueenAlishaRobot{BOT_USERNAME}"]) & other_filters)
 async def ytplay(_, message: Message):
     global que
     if message.chat.id in DISABLED_GROUPS:
@@ -914,7 +885,7 @@ async def ytplay(_, message: Message):
                     # print(e)
                     await lel.edit(
                         f"🔴 **Flood Wait Error** 🔴 \n\n**userbot can't join this group due to many join requests for userbot.**"
-                        f"\n\n**or add @{ASSISTANT_NAME} to this group manually then try again.**",
+                        f"\n\n**or add @Queen_Alisha {ASSISTANT_NAME} to this group manually then try again.**",
                     )
     try:
         await USER.get_chat(chid)
@@ -972,7 +943,7 @@ async def ytplay(_, message: Message):
                 InlineKeyboardButton("• Mᴇɴᴜ", callback_data="menu"),
                 InlineKeyboardButton("• Cʟᴏsᴇ", callback_data="cls"),
             ],
-            [InlineKeyboardButton("• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}")],
+            [InlineKeyboardButton("• Cʜᴀɴɴᴇʟ", url=f"https://t.me/ABOUTABHI {UPDATES_CHANNEL}")],
         ]
     )
     message.from_user.first_name
