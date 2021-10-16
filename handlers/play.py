@@ -1252,7 +1252,7 @@ async def play(_, message: Message):
 
             await lel.edit("__**Processing...**__")
             
-            await lel.delete()
+           
             
 
             # print(results)
