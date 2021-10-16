@@ -1176,7 +1176,7 @@ async def play(_, message: Message):
 
             emojilist = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣"]
 
-            while j < 5:
+            while j < 1:
 
                 toxxt += f"{emojilist[j]} [{results[j]['title'][:25]}...](https://youtube.com{results[j]['url_suffix']})\n"
 
@@ -1250,7 +1250,10 @@ async def play(_, message: Message):
 
         except:
 
-            await lel.edit("__no more results to choose, starting to playing...__")
+            await lel.edit("__**Processing...**__")
+            
+            await lel.delete()
+            
 
             # print(results)
 
