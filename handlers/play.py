@@ -1124,7 +1124,7 @@ async def play(_, message: Message):
 
                     InlineKeyboardButton(
 
-                        "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/ABOUTABHI {UPDATES_CHANNEL}"
 
                     )
 
@@ -1154,7 +1154,7 @@ async def play(_, message: Message):
 
         try:
 
-            results = YoutubeSearch(query, max_results=5).to_dict()
+            results = YoutubeSearch(query, max_results=1).to_dict()
 
         except:
 
