@@ -1,7 +1,7 @@
-<p align="center"><a href="https://t.me/Venom_Hai_Hum"><img src="https://telegra.ph/file/49903f106f084a2e1e1c6.jpg"></a></p>
+<p align="center"><a href="https://t.me/ROYAL_DOLLY_FIGHTER"><img src="https://te.legra.ph/file/b47d5bc8a380de7143132.jpg"></a></p>
 <p align="center">
 <p align="center"><a href=""> <img src="https://img.shields.io/badge/Copy%20Paster%20Ki%20Gand%20Main%20Land-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
-    <br><b>Alisha Music is a telegram bot project that's allow you to play music on telegram voice chat group</b><br>
+    <br><b>DOLLY Music is a telegram bot project that's allow you to play music on telegram voice chat group</b><br>
 </p>
 
     
@@ -82,7 +82,7 @@
 ## Heroku Deployment 💜
 The easy way to host this bot, deploy to Heroku, Change the app country to Europe (it will help to make the bot stable).
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AbhimanyuSinghRana/AlishaProMusic)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/hnyop/AlishaProMusic)
 
 ## VPS Deployment 📡
 
